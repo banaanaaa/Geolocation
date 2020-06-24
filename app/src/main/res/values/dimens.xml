@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_xxxlarge">48dp</dimen>
+    <dimen name="spacing_xxlarge">40dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_xsmall">4dp</dimen>
+    <dimen name="spacing_xxsmall">2dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_xlarge">32sp</dimen>
+    <dimen name="text_size_xxlarge">40sp</dimen>
+
+    <dimen name="round_size_small">4dp</dimen>
+    <dimen name="round_size_normal">8dp</dimen>
+    <dimen name="round_size_medium">16dp</dimen>
+    <dimen name="round_size_large">24dp</dimen>
+
+    <dimen name="size_xxxlarge">64dp</dimen>
+    <dimen name="size_xxlarge">48dp</dimen>
+    <dimen name="size_xlarge">40dp</dimen>
+    <dimen name="size_large">32dp</dimen>
+    <dimen name="size_normal">24dp</dimen>
+    <dimen name="size_small">16dp</dimen>
+    <dimen name="size_xsmall">8dp</dimen>
+    <dimen name="size_xxsmall">4dp</dimen>
+</resources>

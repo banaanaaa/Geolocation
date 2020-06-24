@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.banaanaaa.geolocation.view.FragmentSettings">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/title_accuracy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/title_accuracy"-->
+<!--            style="@style/SettingsTittleStyle"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/desc_accuracy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/desc_accuracy"-->
+<!--            style="@style/SettingsDescStyle"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/title_accuracy"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/accuracy_l"-->
+<!--            style="@style/TextInputLayoutStyle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/desc_accuracy">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/accuracy_et"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="10 - 500"-->
+<!--                android:inputType="number" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/title_sample_rate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/title_sample_rate"-->
+<!--            android:paddingTop="@dimen/spacing_large"-->
+<!--            style="@style/SettingsTittleStyle"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/accuracy_l"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/desc_sample_rate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/desc_sample_rate"-->
+<!--            style="@style/SettingsDescStyle"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/title_sample_rate"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/sample_rate_l"-->
+<!--            style="@style/TextInputLayoutStyle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="@dimen/spacing_large"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/desc_sample_rate">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/sample_rate_et"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="1 - 30"-->
+<!--                android:inputType="number" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/buttonSave"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/button_save"-->
+<!--            style="@style/ColoredButtonStyle"-->
+<!--            app:layout_constraintRight_toRightOf="@id/sample_rate_l"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/sample_rate_l"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</ScrollView>

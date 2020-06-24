@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="point"
+            type="com.banaanaaa.geolocation.model.entity.Point" />
+        <variable
+            name="listener"
+            type="com.banaanaaa.geolocation.view.FragmentList.Listener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="@{() -> listener.click(point)}"
+        android:paddingBottom="@dimen/spacing_small">
+
+        <LinearLayout
+            android:id="@+id/fields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/item_name + `: ` + point.name}" />
+
+            <TextView
+                android:id="@+id/latitude_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/item_latitude + `: ` + point.latitude}" />
+
+            <TextView
+                android:id="@+id/longitude_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/item_longitude + `: ` + point.longitude}" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_edit"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:text="@string/button_edit"
+            android:contentDescription="@string/button_delete"
+            app:layout_constraintBottom_toBottomOf="@+id/fields"
+            app:layout_constraintEnd_toStartOf="@id/button_delete"
+            app:layout_constraintTop_toTopOf="@id/fields"
+            android:onClick="@{() -> listener.rename(point)}" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_delete"
+            android:contentDescription="@string/button_delete"
+            android:src="@drawable/ic_clear"
+            app:layout_constraintTop_toTopOf="@id/button_edit"
+            app:layout_constraintBottom_toBottomOf="@id/button_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() -> listener.delete(point)}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

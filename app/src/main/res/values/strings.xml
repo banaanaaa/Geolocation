@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="app_name">Geolocation</string>
+
+    <string name="add_new">Add new</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Point not saved because it is empty.</string>
+
+    <string name="item_name">Name</string>
+    <string name="item_latitude">Latitude</string>
+    <string name="item_longitude">Longitude</string>
+
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="navigation_list">List</string>
+    <string name="navigation_map">Map</string>
+    <string name="navigation_settings">Settings</string>
+
+    <string name="fab_add_location">Add location</string>
+    <string name="fab_my_location">Show my location</string>
+
+    <string name="dialog_new_point_title">Add new point</string>
+    <string name="dialog_new_point_name">Name</string>
+    <string name="dialog_new_point_latitude">Latitude: %f</string>
+    <string name="dialog_new_point_longitude">Longitude: %f</string>
+    <string name="dialog_rename_point_tittle">Enter new name</string>
+    <string name="dialog_rename_point_name">Name</string>
+    <string name="dialog_rename_point_old_name">Old name:</string>
+
+    <string name="title_list">List</string>
+    <string name="title_map">Map</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_edit">Edit</string>
+    <string name="title_clear">Clear</string>
+    <string name="title_clear_all">Clear all</string>
+
+    <!--Settings-->
+    <string name="title_accuracy">Accuracy</string>
+    <string name="title_sample_rate">Sample rate</string>
+    <string name="desc_accuracy">Set accuracy of geolocation tracking.</string>
+    <string name="desc_sample_rate">Set the frequency of service surveys.</string>
+    <string name="key_accuracy">KEY_ACCURACY</string>
+    <string name="key_frequency">KEY_FREQUENCY</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="checking_repository">There is already a point nearby. Change the settings
+        if you want to put the point here</string>
+
+    // Errors
+    <string name="error_name_is_short">This name is short.</string>
+    <string name="error_name_is_long">This name is long.</string>
+    <string name="error_name_is_exist">This name is already exist.</string>
+    <string name="toast_is_short">It must be more than 8 characters long.</string>
+    <string name="toast_is_long">It must be less than 25 characters long.</string>
+</resources>
+
