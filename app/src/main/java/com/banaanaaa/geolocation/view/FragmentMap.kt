@@ -191,6 +191,10 @@ class FragmentMap : Fragment(), OnMapReadyCallback {
                         .zoom(16f).build()))
     }
 
+    fun checkRepos() {
+
+    }
+
     private fun moveOnLastLocation() {
         if (activity != null) {
             mFusedLocationClient.lastLocation.addOnCompleteListener(activity!!) {
