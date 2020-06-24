@@ -1,4 +1,4 @@
-#Wed Jun 24 19:43:56 MSK 2020
+#Thu Jun 25 01:27:23 MSK 2020
 base.0=/home/icon/AndroidStudioProjects/Geolocation/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

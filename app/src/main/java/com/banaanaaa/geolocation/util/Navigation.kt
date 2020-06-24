@@ -131,6 +131,7 @@ class Navigation : LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     fun onDestroy() {
+        Utility.showToast(mContext!!, "Destroy")
         mFragmentManager = null
     }
 

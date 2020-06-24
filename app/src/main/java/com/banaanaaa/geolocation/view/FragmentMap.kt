@@ -95,38 +95,35 @@ class FragmentMap : Fragment(), OnMapReadyCallback {
     }
 
     override fun onMapReady(googleMap: GoogleMap?) {
-        mMap = mViewModel.loadMap()
-        if (mMap == null) {
-            mMap = googleMap
-            mMap!!.isMyLocationEnabled = true
-            mMap!!.uiSettings.isZoomControlsEnabled = true
-            mMap!!.uiSettings.isMapToolbarEnabled = false
+        mMap = googleMap
+        mMap!!.isMyLocationEnabled = true
+        mMap!!.uiSettings.isZoomControlsEnabled = true
+        mMap!!.uiSettings.isMapToolbarEnabled = false
 
-            val orientation = activity!!.windowManager.defaultDisplay.rotation
-            if (orientation == 1 || orientation == 3) {
-                redrawZoomButtons(true)
-            } else {
-                redrawZoomButtons(false)
+        val orientation = activity!!.windowManager.defaultDisplay.rotation
+        if (orientation == 1 || orientation == 3) {
+            redrawZoomButtons(true)
+        } else {
+            redrawZoomButtons(false)
+        }
+
+        mViewModel.saveMap(mMap!!)
+        mViewModel.getPoints().observe(this, Observer { list ->
+            if (list.isNotEmpty()) {
+                mViewModel.loadList(list)
             }
+            mViewModel.getPoints().removeObservers(this)
+        })
 
-            mViewModel.saveMap(mMap!!)
-            mViewModel.getPoints().observe(this, Observer { list ->
-                if (list.isNotEmpty()) {
-                    mViewModel.loadList(list)
-                }
-                mViewModel.getPoints().removeObservers(this)
-            })
+        if (!mPermissions) {
+            Utility.showToast(activity!!, "Отсутствуют необходимые разрешения")
+            return
+        }
 
-            if (!mPermissions) {
-                Utility.showToast(activity!!, "Отсутствуют необходимые разрешения")
-                return
-            }
-
-            GlobalScope.launch(Dispatchers.Main) {
-                requestNewLocationData()
-                delay(2000)
-                moveOnLastLocation()
-            }
+        GlobalScope.launch(Dispatchers.Main) {
+            requestNewLocationData()
+            delay(2000)
+            moveOnLastLocation()
         }
     }
 
